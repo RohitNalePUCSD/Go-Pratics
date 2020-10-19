@@ -5,14 +5,15 @@ import (
 	"log"
 	"net"
 
+	"github.com/RohitNalePUCSD/Go-Pratics/gRPC/chat"
 	"google.golang.org/grpc"
 )
 
 func main() {
 
-	fmt.Println("Go gRPC Beginners Tutorial!")
+	fmt.Println("Go gRPC")
 
-	lis, err := net.Listen("tcp", fmt.Sprintf(":%d", 9000))
+	lis, err := net.Listen("tcp", fmt.Sprintf(":%d", 9001))
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
